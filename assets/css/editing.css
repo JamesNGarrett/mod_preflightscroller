@@ -1,0 +1,12 @@
+/* CSS Document */
+
+.hide-this-label > .control-group > .control-label {display:none;}
+.hide-this-label > .control-group > .controls {margin:0}
+
+.subform-repeatable-group .control-label {float:none;text-align: left;}
+.subform-repeatable-group .control-label label {font-size:11px;line-height:10px;}
+.subform-repeatable-group .controls {margin:0}
+.subform-repeatable-group .controls input, .subform-repeatable-group .controls textarea {width:97%}
+
+
+#modules-form fieldset > .control-group, #modules-form fieldset > hr {display:none;}

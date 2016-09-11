@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="item" label="Item">
+    	<field name="item_title" type="text" label="Name" />
+    	<field name="item_desc" type="textarea" label="Description" cols="50" rows="5" />
+    	<field name="item_link" type="text" label="Link" />
+		<field name="item_image" type="media" label="Image" directory="preflightslider" />
+		<field name="item_show" type="list" default="1" label="Show Item" description="">
+  			<option value="0">Hide</option>
+  			<option value="1">Show</option>
+		</field>
+	</fieldset>
+</form>

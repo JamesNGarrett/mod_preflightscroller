@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+	<name>Preflight Image Scroller 2</name>
+	<creationDate>September 2016</creationDate>
+	<author>Preflight</author>
+	<version>1.0</version>
+	<description>Custom module for using Joomla subforms with Zebra Image for cropping and resizing</description>
+
+	<files>
+		<filename module="mod_preflightscroller">mod_preflightscroller.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<folder>subforms</folder>
+		<folder>zebra</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic" addfieldpath="modules/mod_preflightscroller/fields">
+
+				<field name="itemstitle" class="hide-next-label" type="note" label="Items" description="Info here" />
+				<field name="items" type="subform" class="subform-area" formsource="modules/mod_preflightscroller/subforms/itemform.xml" multiple="true" min="0" max="1000" layout="joomla.form.field.subform.repeatable" groupByFieldset="false" label="Items" />	   
+			
+				<field name="settingstitle" type="note" label="Settings" description="Delete the images from the module's assets/images/large folder to recrop the images." />
+				<field name="width" type="text" label="Width to Crop Images" size="10" />
+				<field name="height" type="text" label="Height to Crop Images" size="10" />
+				<field name="smallwidth" type="text" label="Width to Crop Small Images" size="10" />
+				<field name="quality" type="text" label="% Quality to make jpgs" size="10" />
+
+			</fieldset>
+		
+		</fields>
+	</config>
+
+</extension>
